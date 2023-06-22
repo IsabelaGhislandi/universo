@@ -14,6 +14,7 @@ router.handle()
 window.onpopstate = () => router.handle()
 window.route = () => router.route()
 
+const home = document.querySelector("#home")
 const menu = document.querySelector("#hamburger")
 const allNav = document.querySelectorAll(".allNav")
 const menuSVG = document.querySelector("span > svg path")
@@ -24,12 +25,20 @@ const universe = document.querySelector("#universo")
 
 const exploration = document.querySelector("#exploracao")
 
+home.addEventListener("click", function() {
+    router.route()
+    universe.classList.remove("bold")
+    exploration.classList.remove("bold")
+    home.classList.add("bold")
+})
+
 universe.addEventListener("click", function() {
     router.route()
     document.querySelector("body").classList.add("universe")
     document.querySelector("body").classList.remove("exploration")
     universe.classList.add("bold")
     exploration.classList.remove("bold")
+     home.classList.remove("bold")
 })
 
 
@@ -39,6 +48,7 @@ exploration.addEventListener("click", function() {
     document.querySelector("body").classList.remove("universe")
     exploration.classList.add("bold")
     universe.classList.remove("bold")
+     home.classList.remove("bold")
 })
 
 
