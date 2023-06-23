@@ -210,7 +210,8 @@ a:hover {
         margin-left: 3rem;
     }
 
-  
+      .logo > svg {
+          width: 3rem;
  
     ul {
         display: none;
