@@ -189,7 +189,7 @@ a:hover {
         height: 2rem;
     }
     #hamburger > svg {
-    
+        margin-top: 1.5rem;
         margin-left: 2rem;
         width: 4rem;
         height:3rem;
