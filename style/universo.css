@@ -140,6 +140,8 @@
         height: 100%;
         padding: 2rem;
         margin: 0;
+        margin-left: 3rem;
+        margin-top: 4rem;
     }
 
     .main-universe > h1 {
